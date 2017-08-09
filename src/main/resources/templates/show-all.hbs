@@ -6,8 +6,14 @@
         <p>Job History:</p>
        {{#each jobs }} <!--loop-->
 
-            <p>{{ jobTitle }} <a href="/jobs/{{id}}">read more...</a></p> <!--show-->
-            <p>{{ createdAt }}</p>
+            <p>{{ jobTitle }} </p>
+            <p>{{ company }}</p>
+            <p>{{ jobDescription }}</p>
+            <p>{{ companyLocation }}</p>
+            <p>{{ startDate }}</p>
+            <p>{{ endDate }}</p>
+            <p> ------------- </p>
+
        {{/each}}
        {{else}} <!--no jobs!-->
         <p>No jobs!</p>

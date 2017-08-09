@@ -16,7 +16,7 @@ public class Job {
     private int id;
     private boolean addedJob;
 
-    public Job (String jobTitle){
+    public Job (String jobTitle, String company, String jobDescription, String companyLocation, String startDate, String endDate){
         this.jobTitle = jobTitle;
         this.company = company;
         this.jobDescription = jobDescription;
@@ -36,8 +36,40 @@ public class Job {
         return instances;
     }
 
+    public String getCompany() {
+        return company;
+    }
+
+    public String getJobDescription() {
+        return jobDescription;
+    }
+
+    public String getCompanyLocation() {
+        return companyLocation;
+    }
+
+    public String getStartDate() {
+        return startDate;
+    }
+
+    public String getEndDate() {
+        return endDate;
+    }
+
+    public int getId() {
+        return id;
+    }
+
     public boolean getAddedJob(){
         return this.addedJob;
+    }
+
+    public static Job findById(int id){
+        return instances.get(id-1);
+    }
+
+    public static void clearAllJobs(){
+        instances.clear();
     }
 
 }
