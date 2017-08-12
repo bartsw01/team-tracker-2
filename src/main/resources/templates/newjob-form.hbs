@@ -1,12 +1,12 @@
 {{#partial "content"}}
 
-   {{#if editPost}}
+   {{#if editJob}}
        <h1>Edit this Team!</h1>
        <form action="/jobs/{{editJob.id}}/update" method="post">
-           <label for="jobTitle">Edit this Team's content</label>
-           <input id="jobTitle" name="jobTitle" type="text" value="{{editJob.content}}">
+           <label for="teamName">Edit this Team's Name:</label>
+           <input id="teamName" name="teamName" type="text" value="{{editJob.content}}">
    {{else}}
-   <h1>Add a new Job!</h1>
+   <h1>Add a new Team!</h1>
 
    <form action="/jobs/new" method="post">
        <label for="teamName">New Team</label>

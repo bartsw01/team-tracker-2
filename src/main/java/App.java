@@ -60,6 +60,25 @@ public class App {
             return new ModelAndView(model, "job-detail.hbs");
         }, new HandlebarsTemplateEngine());
 
+        get("/jobs/:id/update", (request, response) -> {
+            Map<String, Object> model = new HashMap<>();
+            int idOfJobToEdit = Integer.parseInt(request.params("id"));
+            Job editJob = Job.findById(idOfJobToEdit);
+            model.put("editJob", editJob);
+            return new ModelAndView(model, "newjob-form.hbs");
+        }, new HandlebarsTemplateEngine());
+
+        post("/jobs/:id/update", (request, response) -> {
+            Map<String, Object> model = new HashMap<>();
+            String newTeamName = request.queryParams("teamName");
+            int idOfJobToEdit = Integer.parseInt(request.params("id"));
+            Job editJob = Job.findById(idOfJobToEdit);
+            editJob.update(newTeamName);
+            return new ModelAndView(model, "success.hbs");
+        }, new HandlebarsTemplateEngine());
+
+
+
 
 
 

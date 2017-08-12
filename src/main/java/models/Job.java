@@ -68,6 +68,10 @@ public class Job {
         return instances.get(id-1);
     }
 
+    public void update(String teamName) {
+        this.teamName = teamName;
+    }
+
     public static void clearAllJobs(){
         instances.clear();
     }
