@@ -1,22 +1,22 @@
 {{#partial "content"}}
 
-    <h1>Job list!</h1>
+    <h1>Team list!</h1>
 
-    {{#if jobs}} <!--if jobs exist, then-->
-        <p>Job History:</p>
+    {{#if jobs}} <!--if teams exist, then-->
+        <p>Team Info:</p>
        {{#each jobs }} <!--loop-->
 
-            <p>{{ jobTitle }} </p>
-            <p>{{ company }}</p>
-            <p>{{ jobDescription }}</p>
-            <p>{{ companyLocation }}</p>
-            <p>{{ startDate }}</p>
-            <p>{{ endDate }}</p>
+            <p>{{ teamName }} </p>
+            <p>{{ teamDescription }}</p>
+            <p>{{ teamMember1 }}</p>
+            <p>{{ teamMember2 }}</p>
+            <p>{{ teamMember3 }}</p>
+            <p>{{ teamMember4 }}</p>
             <p> ------------- </p>
 
        {{/each}}
-       {{else}} <!--no jobs!-->
-        <p>No jobs!</p>
+       {{else}} <!--no teams!-->
+        <p>No teams!</p>
        {{/if}}
 
 

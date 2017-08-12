@@ -2,8 +2,8 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
-      <module name="resume-creator_main" target="1.8" />
-      <module name="resume-creator_test" target="1.8" />
+      <module name="team-tracker_main" target="1.8" />
+      <module name="team-tracker_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

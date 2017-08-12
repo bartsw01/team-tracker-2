@@ -26,7 +26,6 @@ public class App {
             Map<String, Object> model = new HashMap<>();
             ArrayList<Job> jobs = Job.getAll();
             model.put("jobs", jobs);
-
             return new ModelAndView(model, "show-all.hbs");
         }, new HandlebarsTemplateEngine());
 
@@ -40,13 +39,13 @@ public class App {
         post("/jobs/new", (request, response) -> { //URL to make new post on POST route
             Map<String, Object> model = new HashMap<>();
 
-            String jobTitle = request.queryParams("jobTitle");
-            String company = request.queryParams("company");
-            String jobDescription = request.queryParams("jobDescription");
-            String companyLocation = request.queryParams("companyLocation");
-            String startDate = request.queryParams("startDate");
-            String endDate = request.queryParams("endDate");
-            Job newJob = new Job(jobTitle,company,jobDescription,companyLocation,startDate,endDate);
+            String teamName = request.queryParams("teamName");
+            String teamDescription = request.queryParams("teamDescription");
+            String teamMember1 = request.queryParams("teamMember1");
+            String teamMember2 = request.queryParams("teamMember2");
+            String teamMember3 = request.queryParams("teamMember3");
+            String teamMember4 = request.queryParams("teamMember4");
+            Job newJob = new Job(teamName,teamDescription,teamMember1,teamMember2,teamMember3,teamMember4);
             model.put("job", newJob);
             return new ModelAndView(model, "success.hbs");
         }, new HandlebarsTemplateEngine());

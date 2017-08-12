@@ -1,16 +1,16 @@
 {{#partial "content"}}
 
-    <h1>Job list!</h1>
+    <h1>Team list!</h1>
 
     {{#if jobs}} <!--if jobs exist, then-->
-        <p>Job History:</p>
+        <p>Team Records:</p>
        {{#each jobs }} <!--loop-->
 
-            <p>{{ jobTitle }} <a href="/jobs/{{id}}">read more...</a></p> <!--show-->
+            <p>{{ teamName }} <a href="/jobs/{{id}}">read more...</a></p> <!--show-->
             <p>{{ createdAt }}</p>
        {{/each}}
-       {{else}} <!--no jobs!-->
-        <p>No jobs!</p>
+       {{else}} <!--no teams!-->
+        <p>No Teams!</p>
        {{/if}}
 
 

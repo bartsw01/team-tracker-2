@@ -7,53 +7,53 @@ import java.util.ArrayList;
  */
 public class Job {
     private static ArrayList<Job> instances = new ArrayList<>();
-    private String jobTitle;
-    private String company;
-    private String jobDescription;
-    private String companyLocation;
-    private String startDate;
-    private String endDate;
+    private String teamName;
+    private String teamDescription;
+    private String teamMember1;
+    private String teamMember2;
+    private String teamMember3;
+    private String teamMember4;
     private int id;
     private boolean addedJob;
 
-    public Job (String jobTitle, String company, String jobDescription, String companyLocation, String startDate, String endDate){
-        this.jobTitle = jobTitle;
-        this.company = company;
-        this.jobDescription = jobDescription;
-        this.companyLocation = companyLocation;
-        this.startDate = startDate;
-        this.endDate = endDate;
+    public Job (String teamName, String teamDescription, String teamMember1, String teamMember2, String teamMember3, String teamMember4){
+        this.teamName = teamName;
+        this.teamDescription = teamDescription;
+        this.teamMember1 = teamMember1;
+        this.teamMember2 = teamMember2;
+        this.teamMember3 = teamMember3;
+        this.teamMember4 = teamMember4;
         instances.add(this);
         this.id = instances.size();
         this.addedJob = false;
-    }
-
-    public String getJobTitle(){
-        return this.jobTitle;
     }
 
     public static ArrayList<Job> getAll(){
         return instances;
     }
 
-    public String getCompany() {
-        return company;
+    public String getTeamName(){
+        return teamName;
     }
 
-    public String getJobDescription() {
-        return jobDescription;
+    public String getTeamDescription() {
+        return teamDescription;
     }
 
-    public String getCompanyLocation() {
-        return companyLocation;
+    public String getTeamMember1() {
+        return teamMember1;
     }
 
-    public String getStartDate() {
-        return startDate;
+    public String getTeamMember2() {
+        return teamMember2;
     }
 
-    public String getEndDate() {
-        return endDate;
+    public String getTeamMember3() {
+        return teamMember3;
+    }
+
+    public String getTeamMember4() {
+        return teamMember4;
     }
 
     public int getId() {

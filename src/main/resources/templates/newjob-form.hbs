@@ -1,26 +1,26 @@
 {{#partial "content"}}
 
    {{#if editPost}}
-       <h1>Edit this Job!</h1>
+       <h1>Edit this Team!</h1>
        <form action="/jobs/{{editJob.id}}/update" method="post">
-           <label for="jobTitle">Edit this job's content</label>
+           <label for="jobTitle">Edit this Team's content</label>
            <input id="jobTitle" name="jobTitle" type="text" value="{{editJob.content}}">
    {{else}}
    <h1>Add a new Job!</h1>
 
    <form action="/jobs/new" method="post">
-       <label for="jobTitle">New Job</label>
-       <input id="jobTitle" name="jobTitle" type="text">
-       <label for="company">Company</label>
-       <input id="company" name="company" type="text">
-       <label for="jobDescription">Job Description</label>
-       <input id="jobDescription" name="jobDescription" type="text">
-       <label for="companyLocation">Company Location</label>
-       <input id="companyLocation" name="companyLocation" type="text">
-       <label for="startDate">Start Date</label>
-       <input id="startDate" name="startDate" type="text">
-       <label for="endDate">End Date</label>
-       <input id="endDate" name="endDate" type="text">
+       <label for="teamName">New Team</label>
+       <input id="teamName" name="teamName" type="text">
+       <label for="teamDescription">Team Description</label>
+       <input id="teamDescription" name="teamDescription" type="text">
+       <label for="teamMember1">Team Member 1</label>
+       <input id="teamMember1" name="teamMember1" type="text">
+       <label for="teamMember2">Team Member 2</label>
+       <input id="teamMember2" name="teamMember2" type="text">
+       <label for="teamMember3">Team Member 3</label>
+       <input id="teamMember3" name="teamMember3" type="text">
+       <label for="teamMember4">Team Member 4</label>
+       <input id="teamMember4" name="teamMember4" type="text">
    {{/if}}
        <button type="submit" class="btn btn-default">Go!</button>
    </form>
