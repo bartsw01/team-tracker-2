@@ -5,8 +5,8 @@ import java.util.ArrayList;
 /**
  * Created by Guest on 8/8/17.
  */
-public class Job {
-    private static ArrayList<Job> instances = new ArrayList<>();
+public class Team {
+    private static ArrayList<Team> instances = new ArrayList<>();
     private String teamName;
     private String teamDescription;
     private String teamMember1;
@@ -14,9 +14,9 @@ public class Job {
     private String teamMember3;
     private String teamMember4;
     private int id;
-    private boolean addedJob;
+    private boolean addedTeam;
 
-    public Job (String teamName, String teamDescription, String teamMember1, String teamMember2, String teamMember3, String teamMember4){
+    public Team (String teamName, String teamDescription, String teamMember1, String teamMember2, String teamMember3, String teamMember4){
         this.teamName = teamName;
         this.teamDescription = teamDescription;
         this.teamMember1 = teamMember1;
@@ -25,10 +25,10 @@ public class Job {
         this.teamMember4 = teamMember4;
         instances.add(this);
         this.id = instances.size();
-        this.addedJob = false;
+        this.addedTeam = false;
     }
 
-    public static ArrayList<Job> getAll(){
+    public static ArrayList<Team> getAll(){
         return instances;
     }
 
@@ -60,11 +60,11 @@ public class Job {
         return id;
     }
 
-    public boolean getAddedJob(){
-        return this.addedJob;
+    public boolean getAddedTeam(){
+        return this.addedTeam;
     }
 
-    public static Job findById(int id){
+    public static Team findById(int id){
         return instances.get(id-1);
     }
 
@@ -72,7 +72,7 @@ public class Job {
         this.teamName = teamName;
     }
 
-    public static void clearAllJobs(){
+    public static void clearAllTeams(){
         instances.clear();
     }
 

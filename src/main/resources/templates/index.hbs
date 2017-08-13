@@ -2,11 +2,11 @@
 
     <h1>Team list!</h1>
 
-    {{#if jobs}} <!--if jobs exist, then-->
+    {{#if teams}} <!--if teams exist, then-->
         <p>Team Records:</p>
        {{#each jobs }} <!--loop-->
 
-            <p>{{ teamName }} <a href="/jobs/{{id}}">read more...</a></p> <!--show-->
+            <p>{{ teamName }} <a href="/teams/{{id}}">read more...</a></p> <!--show-->
             <p>{{ createdAt }}</p>
        {{/each}}
        {{else}} <!--no teams!-->

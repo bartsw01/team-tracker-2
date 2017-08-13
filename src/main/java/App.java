@@ -1,4 +1,4 @@
-import models.Job;
+import models.Team;
 
 
 import java.util.ArrayList;
@@ -17,26 +17,26 @@ public class App {
 
         get("/", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
-            ArrayList<Job> jobs = Job.getAll();
-            model.put("jobs", jobs);
+            ArrayList<Team> teams = Team.getAll();
+            model.put("teams", teams);
             return new ModelAndView(model, "/index.hbs");
         }, new HandlebarsTemplateEngine());
 
-        get("/jobs", (req, res) -> {
+        get("/teams", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
-            ArrayList<Job> jobs = Job.getAll();
-            model.put("jobs", jobs);
+            ArrayList<Team> teams = Team.getAll();
+            model.put("teams", teams);
             return new ModelAndView(model, "show-all.hbs");
         }, new HandlebarsTemplateEngine());
 
         //get: show new post form
-        get("/jobs/new", (request, response) -> {
+        get("/teams/new", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
-            return new ModelAndView(model, "newjob-form.hbs");
+            return new ModelAndView(model, "newteam-form.hbs");
         }, new HandlebarsTemplateEngine());
 
         //post: process new post form
-        post("/jobs/new", (request, response) -> { //URL to make new post on POST route
+        post("/teams/new", (request, response) -> { //URL to make new post on POST route
             Map<String, Object> model = new HashMap<>();
 
             String teamName = request.queryParams("teamName");
@@ -45,35 +45,35 @@ public class App {
             String teamMember2 = request.queryParams("teamMember2");
             String teamMember3 = request.queryParams("teamMember3");
             String teamMember4 = request.queryParams("teamMember4");
-            Job newJob = new Job(teamName,teamDescription,teamMember1,teamMember2,teamMember3,teamMember4);
-            model.put("job", newJob);
+            Team newTeam = new Team(teamName,teamDescription,teamMember1,teamMember2,teamMember3,teamMember4);
+            model.put("team", newTeam);
             return new ModelAndView(model, "success.hbs");
         }, new HandlebarsTemplateEngine());
 
 
         //get: show an individual post
-        get("/jobs/:id", (req, res) -> {
+        get("/teams/:id", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
-            int idOfJobToFind = Integer.parseInt(req.params("id")); //pull id - must match route segment
-            Job foundJob = Job.findById(idOfJobToFind); //use it to find post
-            model.put("job", foundJob); //add it to model for template to display
-            return new ModelAndView(model, "job-detail.hbs");
+            int idOfTeamToFind = Integer.parseInt(req.params("id")); //pull id - must match route segment
+            Team foundTeam = Team.findById(idOfTeamToFind); //use it to find post
+            model.put("team", foundTeam); //add it to model for template to display
+            return new ModelAndView(model, "team-detail.hbs");
         }, new HandlebarsTemplateEngine());
 
-        get("/jobs/:id/update", (request, response) -> {
+        get("/teams/:id/update", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
-            int idOfJobToEdit = Integer.parseInt(request.params("id"));
-            Job editJob = Job.findById(idOfJobToEdit);
-            model.put("editJob", editJob);
-            return new ModelAndView(model, "newjob-form.hbs");
+            int idOfTeamToEdit = Integer.parseInt(request.params("id"));
+            Team editTeam = Team.findById(idOfTeamToEdit);
+            model.put("editTeam", editTeam);
+            return new ModelAndView(model, "newteam-form.hbs");
         }, new HandlebarsTemplateEngine());
 
-        post("/jobs/:id/update", (request, response) -> {
+        post("/teams/:id/update", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
             String newTeamName = request.queryParams("teamName");
-            int idOfJobToEdit = Integer.parseInt(request.params("id"));
-            Job editJob = Job.findById(idOfJobToEdit);
-            editJob.update(newTeamName);
+            int idOfTeamToEdit = Integer.parseInt(request.params("id"));
+            Team editTeam = Team.findById(idOfTeamToEdit);
+            editTeam.update(newTeamName);
             return new ModelAndView(model, "success.hbs");
         }, new HandlebarsTemplateEngine());
 
