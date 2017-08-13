@@ -1,12 +1,12 @@
 # _Team Tracking Webpage Project for Bart Webber_
 
-#### _{JAVA program with SPARK that allows users to create new teams and update team information for a Hack-A-Thon event}, {August 11, 2017}_
+#### _JAVA program with SPARK that allows users to create new teams and update team information for a Hack-A-Thon event, August 11, 2017_
 
-#### By _**{Bart Webber}**_
+#### By _**Bart Webber**_
 
 ## Description
 
-_{User will be able to create new teams and update team information.}_
+_User will be able to create new teams and update team information._
 
 ## Development Specifications
 
