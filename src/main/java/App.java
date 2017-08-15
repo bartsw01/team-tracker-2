@@ -77,9 +77,13 @@ public class App {
             return new ModelAndView(model, "success.hbs");
         }, new HandlebarsTemplateEngine());
 
-
-
-
+        get("/teams/:id/delete", (request, response) -> {
+            Map<String, Object> model = new HashMap<>();
+            int idOfTeamToDelete = Integer.parseInt(request.params("id"));
+            Team deleteTeam = Team.findById(idOfTeamToDelete);
+            deleteTeam.deleteTeam();
+            return new ModelAndView(model, "success.hbs");
+        },    new HandlebarsTemplateEngine());
 
 
     }

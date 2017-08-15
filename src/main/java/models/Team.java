@@ -76,4 +76,11 @@ public class Team {
         instances.clear();
     }
 
+    public void deleteTeam(){
+        instances.remove(id-1);
+        for(Team thisTeam: instances){
+            thisTeam.id = instances.indexOf(thisTeam) + 1;
+        }
+    }
+
 }
