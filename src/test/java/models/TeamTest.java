@@ -84,6 +84,14 @@ public class TeamTest {
         assertEquals(Team.getAll().get(0).getId(), 1);
     }
 
+    @Test
+    public void deleteAllTeams() throws Exception {
+        Team team = setupNewTeam();
+        Team otherTeam = setupNewTeam();
+        Team.clearAllTeams();
+        assertEquals(0, Team.getAll().size());
+    }
+
 
 
 

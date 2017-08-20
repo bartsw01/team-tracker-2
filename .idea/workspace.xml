@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="549a6a71-3d1c-4f74-aca6-3aae0092ba9e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/models/TeamTest.java" afterPath="$PROJECT_DIR$/src/test/java/models/TeamTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -41,8 +42,8 @@
       <file leaf-file-name="TeamTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/models/TeamTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="81" column="26" lean-forward="true" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
+            <state relative-caret-position="1462">
+              <caret line="89" column="40" lean-forward="false" selection-start-line="89" selection-start-column="40" selection-end-line="89" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -467,7 +468,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TeamTest.deleteASpecificTeam">
+  <component name="RunManager" selected="JUnit.TeamTest">
     <configuration name="TeamTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -518,7 +519,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="TeamTest.findReturnsCorrectTeam" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TeamTest.deleteAllTeams" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="models.*" />
@@ -530,7 +531,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="models" />
       <option name="MAIN_CLASS_NAME" value="models.TeamTest" />
-      <option name="METHOD_NAME" value="findReturnsCorrectTeam" />
+      <option name="METHOD_NAME" value="deleteAllTeams" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -792,19 +793,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.TeamTest.findReturnsCorrectTeam" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TeamTest.findReturnsCorrectTeamWhenMoreThanOneTeamExists" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TeamTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TeamTest.updateChangesTeamContent" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TeamTest.deleteASpecificTeam" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.TeamTest.findReturnsCorrectTeamWhenMoreThanOneTeamExists" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TeamTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TeamTest.updateChangesTeamContent" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TeamTest.deleteASpecificTeam" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TeamTest.deleteAllTeams" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TeamTest.deleteASpecificTeam" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TeamTest.updateChangesTeamContent" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TeamTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TeamTest.findReturnsCorrectTeamWhenMoreThanOneTeamExists" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TeamTest.findReturnsCorrectTeam" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TeamTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TeamTest.deleteAllTeams" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TeamTest.deleteASpecificTeam" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TeamTest.updateChangesTeamContent" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TeamTest.findReturnsCorrectTeamWhenMoreThanOneTeamExists" />
       </list>
     </recent_temporary>
   </component>
@@ -824,6 +825,12 @@
   <component name="TestHistory">
     <history-entry file="TeamTest - 2017.08.20 at 15h 34m 51s.xml">
       <configuration name="TeamTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TeamTest_deleteASpecificTeam - 2017.08.20 at 16h 08m 46s.xml">
+      <configuration name="TeamTest.deleteASpecificTeam" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TeamTest_deleteAllTeams - 2017.08.20 at 16h 11m 35s.xml">
+      <configuration name="TeamTest.deleteAllTeams" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TeamTest_findReturnsCorrectTeam - 2017.08.20 at 15h 31m 31s.xml">
       <configuration name="TeamTest.findReturnsCorrectTeam" configurationId="JUnit" />
@@ -850,9 +857,9 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33655173" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33655173" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32965517" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32965517" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17597471" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -954,8 +961,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/models/TeamTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="81" column="26" lean-forward="true" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
+        <state relative-caret-position="1462">
+          <caret line="89" column="40" lean-forward="false" selection-start-line="89" selection-start-column="40" selection-end-line="89" selection-end-column="40" />
           <folding />
         </state>
       </provider>
