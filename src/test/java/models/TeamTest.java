@@ -60,6 +60,15 @@ public class TeamTest {
         assertEquals(1, Team.findById(team.getId()).getId());
     }
 
+    @Test
+    public void findReturnsCorrectTeamWhenMoreThanOneTeamExists() throws Exception {
+        Team team = setupNewTeam();
+        Team otherTeam = setupNewTeam();
+        assertEquals(2, Team.findById(otherTeam.getId()).getId());
+    }
+
+
+
 
 
 
