@@ -36,25 +36,6 @@ public class Team {
         return teamName;
     }
 
-    public String getTeamDescription() {
-        return teamDescription;
-    }
-
-    public String getTeamMember1() {
-        return teamMember1;
-    }
-
-    public String getTeamMember2() {
-        return teamMember2;
-    }
-
-    public String getTeamMember3() {
-        return teamMember3;
-    }
-
-    public String getTeamMember4() {
-        return teamMember4;
-    }
 
     public int getId() {
         return id;
