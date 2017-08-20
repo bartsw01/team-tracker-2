@@ -54,6 +54,12 @@ public class TeamTest {
         assertEquals(1, team.getId());
     }
 
+    @Test
+    public void findReturnsCorrectTeam() throws Exception {
+        Team team = setupNewTeam();
+        assertEquals(1, Team.findById(team.getId()).getId());
+    }
+
 
 
 
