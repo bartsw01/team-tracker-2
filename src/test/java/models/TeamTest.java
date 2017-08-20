@@ -34,7 +34,7 @@ public class TeamTest {
     }
 
     @Test
-    public void AllTeamsContainsAllJobs_true() {
+    public void AllTeamsContainsAllTeams_true() {
         Team team = setupNewTeam();
         Team otherTeam = setupNewTeam();
         assertTrue(Team.getAll().contains(team));
@@ -46,6 +46,15 @@ public class TeamTest {
         Team myTeam = setupNewTeam();
         assertEquals(false, myTeam.getAddedTeam());
     }
+
+    @Test
+    public void getId_TeamInstantiateWithAnID_1() throws Exception {
+        Team.clearAllTeams();  // Remember, the test will fail without this line! We need to empty leftover
+        Team team = setupNewTeam();
+        assertEquals(1, team.getId());
+    }
+
+
 
 
     public Team setupNewTeam(){

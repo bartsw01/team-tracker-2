@@ -1,0 +1,25 @@
+{{#partial "content"}}
+
+    <h1>Team list!</h1>
+
+    {{#if teams}} <!--if teams exist, then-->
+        <p>Team Info:</p>
+       {{#each teams }} <!--loop-->
+
+            <p>{{ teamName }} </p>
+            <p>{{ teamDescription }}</p>
+            <p>{{ teamMember1 }}</p>
+            <p>{{ teamMember2 }}</p>
+            <p>{{ teamMember3 }}</p>
+            <p>{{ teamMember4 }}</p>
+            <p> ------------- </p>
+
+       {{/each}}
+       {{else}} <!--no teams!-->
+        <p>No teams!</p>
+       {{/if}}
+
+
+{{/partial}}
+
+{{> layout.hbs}}

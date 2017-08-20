@@ -1,0 +1,19 @@
+{{#partial "content"}}
+
+    <h1>Team list!</h1>
+
+    {{#if teams}} <!--if teams exist, then-->
+        <p>Team Records:</p>
+       {{#each teams }} <!--loop-->
+
+            <p>{{ teamName }} <a href="/teams/{{id}}">read more...</a></p> <!--show-->
+            <p>{{ createdAt }}</p>
+       {{/each}}
+       {{else}} <!--no teams!-->
+        <p>No Teams!</p>
+       {{/if}}
+
+
+{{/partial}}
+
+{{> layout.hbs}}
