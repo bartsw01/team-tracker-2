@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="549a6a71-3d1c-4f74-aca6-3aae0092ba9e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/models/Team.java" afterPath="$PROJECT_DIR$/src/main/java/models/Team.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/models/TeamTest.java" afterPath="$PROJECT_DIR$/src/test/java/models/TeamTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -43,8 +41,8 @@
       <file leaf-file-name="TeamTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/models/TeamTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+            <state relative-caret-position="353">
+              <caret line="81" column="26" lean-forward="true" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -469,7 +467,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TeamTest.updateChangesTeamContent">
+  <component name="RunManager" selected="JUnit.TeamTest.deleteASpecificTeam">
     <configuration name="TeamTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -484,6 +482,31 @@
       <option name="MAIN_CLASS_NAME" value="models.TeamTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TeamTest.deleteASpecificTeam" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="team-tracker-2_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="models" />
+      <option name="MAIN_CLASS_NAME" value="models.TeamTest" />
+      <option name="METHOD_NAME" value="deleteASpecificTeam" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -533,31 +556,6 @@
       <option name="PACKAGE_NAME" value="models" />
       <option name="MAIN_CLASS_NAME" value="models.TeamTest" />
       <option name="METHOD_NAME" value="findReturnsCorrectTeamWhenMoreThanOneTeamExists" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="TeamTest.getId_TeamInstantiateWithAnID_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="models.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="team-tracker-2_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="models" />
-      <option name="MAIN_CLASS_NAME" value="models.TeamTest" />
-      <option name="METHOD_NAME" value="getId_TeamInstantiateWithAnID_1" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -794,19 +792,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.TeamTest.getId_TeamInstantiateWithAnID_1" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TeamTest.findReturnsCorrectTeam" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TeamTest.findReturnsCorrectTeamWhenMoreThanOneTeamExists" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TeamTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TeamTest.updateChangesTeamContent" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.TeamTest.findReturnsCorrectTeam" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TeamTest.findReturnsCorrectTeamWhenMoreThanOneTeamExists" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TeamTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TeamTest.updateChangesTeamContent" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TeamTest.deleteASpecificTeam" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TeamTest.updateChangesTeamContent" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TeamTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TeamTest.findReturnsCorrectTeamWhenMoreThanOneTeamExists" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TeamTest.findReturnsCorrectTeam" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TeamTest.getId_TeamInstantiateWithAnID_1" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TeamTest.deleteASpecificTeam" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TeamTest.updateChangesTeamContent" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TeamTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TeamTest.findReturnsCorrectTeamWhenMoreThanOneTeamExists" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TeamTest.findReturnsCorrectTeam" />
       </list>
     </recent_temporary>
   </component>
@@ -835,6 +833,9 @@
     </history-entry>
     <history-entry file="TeamTest_getId_TeamInstantiateWithAnID_1 - 2017.08.20 at 15h 22m 56s.xml">
       <configuration name="TeamTest.getId_TeamInstantiateWithAnID_1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TeamTest_updateChangesTeamContent - 2017.08.20 at 16h 02m 46s.xml">
+      <configuration name="TeamTest.updateChangesTeamContent" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -953,8 +954,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/models/TeamTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+        <state relative-caret-position="353">
+          <caret line="81" column="26" lean-forward="true" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
           <folding />
         </state>
       </provider>

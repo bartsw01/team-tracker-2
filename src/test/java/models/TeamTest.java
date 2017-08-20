@@ -71,9 +71,17 @@ public class TeamTest {
     public void updateChangesTeamContent() throws Exception {
         Team team = setupNewTeam();
         String formerTeamName = team.getTeamName();
-
         team.update("Problematics");
         assertNotEquals(formerTeamName, team.getTeamName());
+    }
+
+    @Test
+    public void deleteASpecificTeam() throws Exception {
+        Team team = setupNewTeam();
+        Team otherTeam = new Team("Code Warriors", "Way of the Code Warriors", "Maxine", "Joey", "Lizzy", "Fred");
+        team.deleteTeam();
+        assertEquals(1, Team.getAll().size());
+        assertEquals(Team.getAll().get(0).getId(), 1);
     }
 
 
